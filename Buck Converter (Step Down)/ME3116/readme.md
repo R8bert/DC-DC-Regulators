@@ -86,20 +86,7 @@ Here are suggested 1% standard resistor values for common output voltages.
 
 ## Bill of Materials (BOM)
 
-The component values below are typical. The inductor (L1) and output capacitor (C_out) values should be selected according to the ME3116 datasheet guidelines for your specific Vout and Iout requirements.
-
-| Reference | Component | Footprint | Notes |
-| :--- | :--- | :--- | :--- |
-| U1 | ME3116 | SOT23-6 | |
-| D1 | Schottky Diode | `[e.g., SOD-123]` | e.g., SS14. Must be rated for >Vin (max, 40V) and >Iout (max, 1A). |
-| L1 | Inductor | `[e.g., 0603]` | e.g., 4.7µH - 15µH. Must have a saturation current > 1.2A. |
-| C_in | Input Capacitor | `[e.g., 0603]` | e.g., 10µF, 50V X7R Ceramic. Place close to VIN and GND. |
-| C_out | Output Capacitor | `[e.g., 0603]` | e.g., 22µF - 100µF, 25V X7R Ceramic. |
-| C_bst | Bootstrap Cap | `[e.g., 0603]` | **150nF (0.15µF)**. Connect between BST (Pin 1) and SW (Pin 6). |
-| RF | Feedback Resistor | `[e.g., 0603]` | Sets Vout (Top resistor). See "Output Voltage Configuration". |
-| RG | Feedback Resistor | `[e.g., 0603]` | Sets Vout (Bottom resistor). e.g., 10kΩ. |
-| `[C_ff]` | (Optional) | `[e.g., 0603]` | Feed-forward capacitor (e.g., 10pF-220pF) in parallel with RF. |
-| `[J1, J2]` | Connectors | `[e.g., KF301-2P]` | Input/Output connectors. |
+[Check this html](https://github.com/R8bert/DC-DC-Regulators/blob/main/Buck%20Converter%20(Step%20Down)/ME3116/ibom.html "Interactive BOM - ME3116")
 
 ## Design Files
 
@@ -110,3 +97,4 @@ All original design files (schematic, PCB layout, Gerber files, and BOM) are loc
 * **`/gerber`**: Manufacturing files for the PCB.
 * **`/schematic`**: Schematic files (`.sch`) and PDF export.
 * **`/pcb`**: PCB layout files (`.brd`, `.kicad_pcb`, etc.)
+
