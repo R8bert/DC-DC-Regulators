@@ -87,20 +87,8 @@ Here are suggested 1% standard resistor values for common output voltages.
 
 ## Bill of Materials (BOM)
 
-The component values below are typical. The inductor (L1) and output capacitor (C_out) values should be selected according to the LGS5145 datasheet guidelines for your specific Vout and Iout requirements.
+[Check HTML page] (https://github.com/R8bert/DC-DC-Regulators/blob/main/Buck%20Converter%20(Step%20Down)/LGS5145/ibom.html)
 
-| Reference | Component | Footprint | Notes |
-| :--- | :--- | :--- | :--- |
-| U1 | LGS5145 | SOT23-6 | |
-| D1 | Schottky Diode | `[e.g., SOD-123]` | e.g., SS14. Must be rated for >Vin (max) and >Iout (max). |
-| L1 | Inductor | `[e.g., 1210]` | e.g., 4.7µH - 10µH. Must have a saturation current > 1.2A. |
-| C_in | Input Capacitor | `[e.g., 1206]` | e.g., 10µF, 100V X7R Ceramic. Place close to VIN and GND. |
-| C_out | Output Capacitor | `[e.g., 1206]` | e.g., 22µF, 25V X7R Ceramic. |
-| C_bst | Bootstrap Cap | `[e.g., 0603]` | **100nF**. Connect between BST (Pin 1) and SW (Pin 6). |
-| RF | Feedback Resistor | `[e.g., 0603]` | Sets Vout (Top resistor). See "Output Voltage Configuration". |
-| RG | Feedback Resistor | `[e.g., 0603]` | Sets Vout (Bottom resistor). e.g., 16kΩ. |
-| `[C_ff]` | (Optional) | `[e.g., 0603]` | Feed-forward capacitor (e.g., 47pF) in parallel with RF. |
-+ 2 * KF301-5.0-2P Connectors 
 
 ## Design Files
 
@@ -115,3 +103,4 @@ All original design files (schematic, PCB layout, Gerber files, and BOM) are loc
 * **CERN-OHL-S v2** (Strongly Reciprocal)
 * **TAPR Open Hardware License**
 * **MIT License** (Permissive, common for software but also used for simple hardware)
+
